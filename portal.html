@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header>
+        <img src="nss.png" alt="Left Logo" class="logo left-logo">
+        <h1>NATIONAL SERVICE SCHEME <br> GITAM UNIVERSITY BENGALURU</h1>
+        <img src="gitam.jpg" alt="Right Logo" class="logo right-logo">
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#dashboard" data-section="dashboard">Dashboard</a></li>
+                    <li><a href="#profile" data-section="profile">Profile</a></li>
+                    <li><a href="#update-profile" data-section="update-profile">Update Profile</a></li>
+                    <li><a href="#about-nss" data-section="about-nss">About NSS</a></li>
+                    <li><a href="#nss-gallery" data-section="nss-gallery">NSS Gallery</a></li>
+                    <li><a href="#events-hours" data-section="events-hours">Events & Hours</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <section id="dashboard" class="active">
+                <h2>Dashboard</h2>
+                <div class="section-content">
+                    <p>Welcome to your NSS Student Portal Dashboard. Here you can find a quick overview of your profile and recent activities.</p>
+                    <div class="dashboard-cards">
+                        <div class="card">
+                            <h3>Your Profile</h3>
+                            <p>View and update your profile information.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Recent Events</h3>
+                            <p>Check out the latest events you have participated in.</p>
+                        </div>
+                        <div class="card">
+                            <h3>NSS Hours</h3>
+                            <p>Track the number of hours you've contributed to NSS activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profile">
+                <h2>Your Profile</h2>
+                <div id="profile-details" class="section-content">
+                    <!-- Profile details -->
+                </div>
+            </section>
+
+            <section id="update-profile">
+                <h2>Update Profile</h2>
+                <form id="updateProfileForm">
+                    <div class="form-group">
+                        <label for="updateName">Name:</label>
+                        <input type="text" id="updateName" name="updateName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateEmail">Email:</label>
+                        <input type="email" id="updateEmail" name="updateEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePhone">Phone Number:</label>
+                        <input type="tel" id="updatePhone" name="updatePhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateUniversity">University:</label>
+                        <input type="text" id="updateUniversity" name="updateUniversity" required>
+                    </div>
+                    <button type="submit">Update</button>
+                </form>
+                <div id="updateResponse" class="section-content"></div>
+            </section>
+
+            <section id="about-nss">
+                <h2>About NSS</h2>
+                <p>The National Service Scheme (NSS) is an Indian government-sponsored public service program conducted by the Ministry of Youth Affairs and Sports of the Government of India. NSS is aimed at developing student's personality through community service.</p>
+            </section>
+
+            <section id="nss-gallery">
+                <h2>NSS Gallery</h2>
+                <div id="gallery" class="section-content">
+                    <!-- Gallery images -->
+                </div>
+            </section>
+
+            <section id="events-hours">
+                <h2>Presented Events & Hours</h2>
+                <div id="events-details" class="section-content">
+                    <!-- Events and hours details -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="ports.js"></script>
+</body>
+</html>
